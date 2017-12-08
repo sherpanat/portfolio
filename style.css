@@ -73,15 +73,26 @@ body {
   stroke: #f0e040;
 }
 
-.node {
+.ruby {
   width: 200px;
   height: 200px;
   top: 45px;
   left: 45px;
 }
 
-.node + svg .outer {
-  stroke: #83cd29;
+.ruby + svg .outer {
+  stroke: #b30d0e;
+}
+
+.rails {
+  width: 200px;
+  height: 200px;
+  top: 45px;
+  left: 45px;
+}
+
+.rails + svg .outer {
+  stroke: #D70011;
 }
 
 .chart svg {
@@ -216,3 +227,14 @@ body {
   }
 }
 /* END Keyframes for the initial animation */
+
+/*.node {
+  width: 200px;
+  height: 200px;
+  top: 45px;
+  left: 45px;
+}
+
+.node + svg .outer {
+  stroke: #83cd29;
+}*/
