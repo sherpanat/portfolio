@@ -3,3 +3,18 @@
 // @import "dashboard";
 // @import "profile";
 // @import "map";
+
+h1 {
+  color: #e74c3c;
+}
+
+/* Container styles */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: 'Lato';
+}
+
+* {
+  box-sizing: content-box;
+}
