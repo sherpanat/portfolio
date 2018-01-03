@@ -1,4 +1,4 @@
-<div class="skills-front skills-flexbox">
+<div class="skills-front skills-flexbox skills-vertical">
   <h1>Front-end</h1>
   <!-- HTML Chart -->
   <div>
@@ -19,7 +19,6 @@
       </svg>
     </figure>
 
-
     <!-- Javascript Chart -->
     <figure class="chart" data-percent="50">
       <figcaption></figcaption>
@@ -31,9 +30,9 @@
   </div>
 </div>
 
-<div class="skills-back skills-flexbox">
+<div class="skills-back skills-flexbox skills-vertical">
+  <h1>Back-end</h1>
   <div>
-    <h1>Back-end</h1>
     <!-- Ruby Chart -->
     <figure class="chart" data-percent="75">
       <figcaption></figcaption>
@@ -54,32 +53,34 @@
   </div>
 </div>
 
-<div class="skills-tools skills-flexbox">
+<div class="skills-tools skills-flexbox skills-vertical">
   <h1>Tools</h1>
-  <ul class="li-style-none">
-    <li>
-      <%= image_tag "photoshop-round.png", {class: "logo-skills"}%>
-      Adobe Photoshop
-    </li>
-    <li>
-      <%= image_tag "lightroom-round.png", {class: "logo-skills"}%>
-      Adobe Photoshop Lightroom
-    </li>
-    <li>
-      <%= image_tag "indesign-round.png", {class: "logo-skills"}%>
-      Adobe Photoshop Indesign
-    </li>
-    <li>
-      <%= image_tag "word-round.png", {class: "logo-skills"}%>
-      Microsoft Office Word
-    </li>
-    <li>
-      <%= image_tag "excel-round.png", {class: "logo-skills"}%>
-      Microsoft Office Excel
-    </li>
-    <li>
-      <%= image_tag "powerpoint-round.png", {class: "logo-skills"}%>
-      Microsoft Office Powerpoint
-    </li>
-  </ul>
+  <div class="skills-flexbox">
+    <ul class="li-style-none">
+      <li>
+        <%= image_tag "photoshop-round.png", {class: "logo-skills"}%>
+        Adobe Photoshop
+      </li>
+      <li>
+        <%= image_tag "lightroom-round.png", {class: "logo-skills"}%>
+        Adobe Photoshop Lightroom
+      </li>
+      <li>
+        <%= image_tag "indesign-round.png", {class: "logo-skills"}%>
+        Adobe Photoshop Indesign
+      </li>
+      <li>
+        <%= image_tag "word-round.png", {class: "logo-skills"}%>
+        Microsoft Office Word
+      </li>
+      <li>
+        <%= image_tag "excel-round.png", {class: "logo-skills"}%>
+        Microsoft Office Excel
+      </li>
+      <li>
+        <%= image_tag "powerpoint-round.png", {class: "logo-skills"}%>
+        Microsoft Office Powerpoint
+      </li>
+    </ul>
+  </div>
 </div>

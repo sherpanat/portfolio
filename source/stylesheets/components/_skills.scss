@@ -16,8 +16,12 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.skills-vertical {
   flex-direction: column;
 }
+
 .skills-front {
   grid-column: 1 / span 2;
   grid-row: 1 / span 1;
