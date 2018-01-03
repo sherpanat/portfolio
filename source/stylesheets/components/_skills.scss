@@ -7,6 +7,37 @@
 .container-skills {
   padding: 50px 0;
   text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-rows: repeat(2, 1fr);
+  @media (max-width: 1024px) {
+    display: block;
+  }
+}
+
+.skills-flexbox {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.skills-vertical {
+  flex-direction: column;
+}
+
+.skills-front {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 1;
+}
+
+.skills-back {
+  grid-column: 1 / span 2;
+  grid-row: 2 / span 1;
+}
+
+.skills-tools {
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 2;
 }
 
 .chart {
