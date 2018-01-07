@@ -3,10 +3,10 @@
 //   $(this).toggleClass('active');
 // });
 
-// document.querySelector('.collapse').addEventListener('click', function(e) {
-//   e.preventDefault();
-//   this.classList.toggle('active');
-// });
+document.querySelector('.collapse').addEventListener('click', (event) => {
+  // event.preventDefault();
+  event.classList.toggle('active');
+});
 
 //   e.preventDefault();
 //   e.classList.toggle("active")
