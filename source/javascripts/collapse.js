@@ -2,11 +2,16 @@
 //   e.preventDefault();
 //   $(this).toggleClass('active');
 // });
+function openInfo() {
+  const collapsing = document.querySelector('.collapse')
+  collapsing.addEventListener('click', (event) => {
+    // event.preventDefault();
+    console.log(event);
+    // event.classList.toggle('active');
+  });
+}
+openInfo();
 
-document.querySelector('.collapse').addEventListener('click', (event) => {
-  // event.preventDefault();
-  event.classList.toggle('active');
-});
 
 //   e.preventDefault();
 //   e.classList.toggle("active")
