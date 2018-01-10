@@ -4,13 +4,14 @@
 // });
 function openInfo() {
   const collapsing = document.querySelector('.collapse')
-  collapsing.addEventListener('click', (event) => {
-    // event.preventDefault();
-    console.log(event);
-    // event.classList.toggle('active');
+  collapsing.addEventListener('click', () => {
+    collapsing.classList.toggle('active');
   });
 }
+
 openInfo();
+// document.addEventListener('DOMContentLoaded', () =>{
+// })
 
 
 //   e.preventDefault();
