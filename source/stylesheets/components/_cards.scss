@@ -1,0 +1,138 @@
+.card {
+  height: 175px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  background-size: cover !important;
+  background-position: center;
+  color: white;
+  position: relative;
+}
+
+.ethictory {
+  background-image: linear-gradient(rgba(0,0,0,0.3),
+  rgba(0,0,0,0.2)),
+  url('../images/ethictory-gif.gif');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.card-category {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.card-description {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  .collapse-text {
+    font-size: 24px;
+  }
+  p {
+    font-size: 14px;
+    opacity: 0.7;
+    font-weight: lighter;
+  }
+}
+
+.card-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  z-index: 2;
+  background: black;
+  opacity: 0;
+  &:hover {
+    opacity: 0.1;
+  }
+}
+
+.collapse {
+  background-color: rgba(255,255,255,0);
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  color: #fff;
+  padding: 10px;
+  margin:0px;
+  max-height:170px;
+  overflow:hidden;
+  transition: all 0.4s;
+  display: block;
+  .collapse-text {
+    font-size: 18px;
+    line-height: 20px;
+    position:relative
+  }
+  .collapse-text::after {
+
+  }
+  .collapse-button {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+    z-index: 3;
+  }
+  .collapse-button::after {
+    content: "+";
+    text-align: center;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    /* border: 1px solid #ccc; */
+    border-radius: 50%;
+    font-size: 30px;
+    line-height: 15px;
+    opacity: 0.9;
+    right: 5px;
+    top: 10px;
+    z-index: 3;
+  }
+}
+.collapse.active {
+  background-color: rgba(255,255,255,0.9);
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+  z-index: 200;
+  color:#444;
+  max-height:3000px;
+  padding:10px 20px;
+  margin: 10px -10px;
+  transition: all 0.2s,max-height 4.8s;
+  .collapse-button::after {
+    content: "-";
+  }
+}
+.slide {
+  box-shadow:none !important;
+  margin:0px !important;
+  padding:10px !important
+}
+.transparent {
+  background-color: rgba(255,255,255,0) !important;
+  color:#fff !important;
+  box-shadow:none !important;
+  margin:0px !important;
+  padding:10px !important
+}
+.collapse:hover {
+  .collapse-text::after {
+    opacity:1;
+  }
+}
+.collapse * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+// .wrap-collapse {
+//   width:80%;
+//   margin:0 auto;
+// }
