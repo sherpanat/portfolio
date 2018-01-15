@@ -38,7 +38,7 @@
   position: absolute;
   bottom: 10px;
   left: 10px;
-  .btn-collapse {
+  .collapse-text {
     font-size: 24px;
   }
   p {
@@ -73,12 +73,12 @@
   overflow:hidden;
   transition: all 0.4s;
   display: block;
-  .btn-collapse {
+  .collapse-text {
     font-size: 18px;
     line-height: 20px;
     position:relative
   }
-  .btn-collapse::after {
+  .collapse-text::after {
     content: "+";
     text-align:center;
     position:absolute;
@@ -108,7 +108,7 @@
   padding:10px 20px;
   margin: 10px -10px;
   transition: all 0.2s,max-height 4.8s;
-  .btn-collapse::after {
+  .collapse-text::after {
     content: "-";
   }
 }
@@ -125,7 +125,7 @@
   padding:10px !important
 }
 .collapse:hover {
-  .btn-collapse::after {
+  .collapse-text::after {
     opacity:1;
   }
 }
