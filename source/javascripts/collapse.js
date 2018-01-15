@@ -2,9 +2,11 @@
 //   e.preventDefault();
 //   $(this).toggleClass('active');
 // });
+const collapsingButton = document.querySelector('.collapse-button');
+const collapsing = document.querySelector('.collapse');
+
 function openInfo() {
-  const collapsing = document.querySelector('.collapse')
-  collapsing.addEventListener('click', () => {
+  collapsingButton.addEventListener('click', () => {
     collapsing.classList.toggle('active');
   });
 }
