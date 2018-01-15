@@ -36,7 +36,7 @@
   bottom: 10px;
   left: 10px;
 }
-.card-description h2 {
+.card-description .btn-collapse {
   font-size: 24px;
 }
 .card-description p {
@@ -86,7 +86,7 @@
   margin: 10px -10px;
   transition: all 0.2s,max-height 4.8s;
 }
-.collapse h2 {
+.collapse .btn-collapse {
   font-size: 18px;
   line-height: 20px;
   position:relative
@@ -103,7 +103,7 @@
   margin:0px !important;
   padding:10px !important
 }
-.collapse h2::after {
+.collapse .btn-collapse::after {
   content: "+";
   text-align:center;
   position:absolute;
@@ -117,11 +117,11 @@
   right:0;
   top:0;
 }
-.collapse:hover h2::after {
-  opacity:1
+.collapse:hover .btn-collapse::after {
+  opacity:1;
 }
 
-.collapse.active h2::after {
+.collapse.active .btn-collapse::after {
   content: "-";
 }
 
