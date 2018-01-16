@@ -7,11 +7,13 @@ const collapsing = document.querySelectorAll('.collapse');
 
 function openInfo(element) {
   element.addEventListener('click', () => {
+    console.log(element);
     collapsing.forEach(elem => elem.classList.toggle('active'));
   });
 }
 
 collapsingButton.forEach(button => openInfo(button));
+// collapsing.forEach( => )
 
 // document.addEventListener('DOMContentLoaded', () =>{
 // })
