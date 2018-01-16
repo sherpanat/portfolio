@@ -2,16 +2,17 @@
 //   e.preventDefault();
 //   $(this).toggleClass('active');
 // });
-const collapsingButton = document.querySelector('.collapse-button');
-const collapsing = document.querySelector('.collapse');
+const collapsingButton = document.querySelectorAll('.collapse-button');
+const collapsing = document.querySelectorAll('.collapse');
 
-function openInfo() {
-  collapsingButton.addEventListener('click', () => {
-    collapsing.classList.toggle('active');
+function openInfo(element) {
+  element.addEventListener('click', () => {
+    collapsing.forEach(elem => elem.classList.toggle('active'));
   });
 }
 
-openInfo();
+collapsingButton.forEach(button => openInfo(button));
+
 // document.addEventListener('DOMContentLoaded', () =>{
 // })
 
