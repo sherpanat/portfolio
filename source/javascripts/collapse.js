@@ -12,6 +12,7 @@ function openInfo(element) {
   });
 }
 
+
 collapsingButton.forEach(button => openInfo(button));
 // collapsing.forEach( => )
 
